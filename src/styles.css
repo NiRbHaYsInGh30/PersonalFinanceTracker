@@ -1,0 +1,57 @@
+:root {
+  --theme: #007bff;
+  /* Replace with your preferred theme color */
+  --navbar-hover-color: #ffd700;
+  /* Hover color for navbar links */
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--theme);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.navbar-heading {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-link {
+  color: #e3e3e3;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: var(--navbar-hover-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+  color: var(--navbar-hover-color);
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}

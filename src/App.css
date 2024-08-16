@@ -1,0 +1,136 @@
+:root {
+  --theme: #007bff;
+  /* Example theme color, replace as needed */
+}
+
+.blue-text {
+  color: var(--theme);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+}
+
+.signup-signin-container {
+  width: 30vw;
+  min-width: 400px;
+  box-shadow: 0 0 30px 8px rgba(227, 227, 227, 0.75);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.input-wrapper {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.input-wrapper p {
+  margin-bottom: 0;
+  color: #000;
+}
+
+.input-wrapper input,
+.custom-input {
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 0.5rem 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+.custom-input {
+  margin-top: -1rem;
+}
+
+.input-wrapper input::placeholder,
+.custom-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.input-wrapper input:focus,
+.custom-input:focus {
+  outline: none;
+  transition: all 0.3s;
+}
+
+.btn {
+  color: var(--theme);
+  text-align: center;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid var(--theme);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--theme);
+  color: #fff;
+}
+
+.btn-blue {
+  background-color: var(--theme);
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #fff;
+  color: var(--theme);
+}
+
+.input-flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  box-shadow: 0 0 30px 8px rgba(227, 227, 227, 0.75);
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.input-flex input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+}
+
+.input-flex input:focus {
+  outline: none;
+}
+
+.select-input {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 30px 8px rgba(227, 227, 227, 0.75);
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.select-input>div,
+.select-input-2>div {
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+}
+
+.my-table {
+  box-shadow: 0 0 30px 8px rgba(227, 227, 227, 0.75);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.dashboard-container {
+  padding-bottom: 1rem;
+}
